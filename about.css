@@ -1,0 +1,94 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1578852612716-854e527abf2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3Rvcnl8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Adding transition for smooth effect */
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: white;
+    transform: rotateY(10deg) scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adding box shadow for depth */
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.about-section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    
+    left: 10px;
+    
+    width: 230px; /* Adjust the width as needed */
+}

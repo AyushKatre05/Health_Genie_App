@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?cs=srgb&dl=pexels-pixabay-40568.jpg&fm=jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    perspective: 1000px;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+}
+nav a:hover {
+    background-color: #333;
+    color: white;
+    transform: rotateY(10deg) scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+main {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px; /* Add margin-bottom to make space for the footer */
+}
+.service {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Adding transition for smooth effect */
+    transform-style: preserve-3d;
+}
+.service:hover {
+    transform: rotateY(5deg) scale(1.05);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 230px; /* Adjust the width as needed */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Initial animation position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+}
+
+.predict a, a {
+    text-decoration: none;
+    color: white;
+}

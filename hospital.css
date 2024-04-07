@@ -1,0 +1,118 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f2f2f2; /* Removed unnecessary shadow */
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+  }
+  
+  /* Navigation */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Main content */
+  .main {
+    padding: 40px;
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 50px;
+    background-color: rgba(238, 238, 238, 0.9); /* Light Gray background */
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #337ab7; /* Vibrant teal heading */
+  }
+  
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666; /* Slightly darker text */
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+  }
+  
+  .list-item i {
+    color: #337ab7; /* Teal icon for list items */
+    margin-right: 10px;
+  }
+  
+  /* Hero content */
+  .hero-content {
+    background-image: url("path/to/medical-background-image.jpg"); /* Add a calming medical background image */
+    background-size: cover;
+    background-position: center;
+    /* Removed unnecessary box-shadow */
+  }
+  
+  /* Other sections */
+  .how-it-works,
+  .benefits,
+  .disease-prediction,
+  .about-health-genie {
+    /* Removed individual background colors, using section's style */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    /* Removed unnecessary shadow */
+  }
+  

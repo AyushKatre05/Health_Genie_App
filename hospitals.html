@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Guide- Health Genie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t4.ftcdn.net/jpg/05/79/48/45/240_F_579484575_BxaciCi3h43WQMLDv7ey1h6al0qQ6eWg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            perspective: 1000px;
+        }
+        header {
+            background-color: rgba(17, 43, 31, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transform-style: preserve-3d;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: white;
+            transform: rotateY(10deg) scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        main {
+            padding: 20px;
+            margin-bottom: 80px; /* Add margin-bottom to make space for the footer */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .hospital-details {
+            width: 50%; /* Adjust the width as needed */
+            padding: 20px;
+            background-color: rgba(17, 43, 31, 0.7);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .hospital-details:nth-child(odd) {
+            align-self: flex-start;
+            margin-right: auto;
+        }
+        .hospital-details:nth-child(even) {
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .hospital-details h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .hospital-details h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .hospital-details p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .hospital-details a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .hospital-location {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .hospital-location iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            background-color: rgba(17, 43, 31, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Health Genie's Hospital Guide</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <div class="hospital-details">
+            <h2>Dr. D Y Patil Medical College</h2>
+            <h3>Super Speciality:</h3>
+            <p>Neurosurgery, Urology, Nephrology, Plastic Surgery, Cardio Thoracic, Vascular Surgery</p>
+            <p>Email: info.medical@dpu.edu.in</p>
+            <a href="https://medical.dpu.edu.in/about-hospital.aspx#">More Info</a>
+            <div class="hospital-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.8861322194825!2d73.81896051485877!3d18.62419068734881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8613fbc4431%3A0x121db9f8d7d29098!2sDr.%20D.%20Y.%20Patil%20Medical%20College%2C%20Hospital%20%26%20Research%20Centre!5e0!3m2!1sen!2sin!4v1657804952483!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="hospital-details">
+            <h2>Apollo Spectra Hospitals</h2>
+            <h3>Super Speciality:</h3>
+            <p>Orthopaedics & Spine, General & Laparoscopic Surgery, ENT, Urology, Vascular Surgery, Ophthalmology</p>
+            <p>Email: apollospectra@gmail.com</p>
+            <a href="https://www.apollospectra.com/lp/asbrand-lp/?utm_source=SEM&utm_medium=Brand&utm_campaign=Brand_Pune&mobile=7292004153&utm_term=apollo%20spectra">More Info</a>
+            <div class="hospital-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.574343790365!2d73.84984431485697!3d18.502930187419317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c00d98be5a09%3A0x8dba639bb3803253!2sApollo%20Spectra%20Hospitals!5e0!3m2!1sen!2sin!4v1657805181949!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="hospital-details">
+            <h2>Yashwantrao Chavan Memorial Hospital</h2>
+            <h3>Super Speciality:</h3>
+            <p>Pediatrics, Orthopedics, Ophthalmology, General Surgery, Psychiatry, Pathology, Physiotherapy</p>
+            <p>Email: yashwantraochavanhospital.com</p>
+            <a href="http://www.ycmhpgi.org/">More Info</a>
+            <div class="hospital-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.9388637130514!2d73.8188395148588!3d18.62181938735011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b860fbe326e1%3A0x798186edcd411aba!2sYashwantrao%20Chavan%20Memorial%20Hospital!5e0!3m2!1sen!2sin!4v1657805584345!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="hospital-details">
+            <h2>Ruby Hall Clinic</h2>
+            <h3>Super Speciality:</h3>
+            <p>Bariatric and Metabolic Surgery, Breast Cancer, Cardiac Sciences & CCU, Cosmetic and plastic Surgery, Diabetology, Gastroenterology</p>
+            <p>Email: info@rubyhall.com</p>
+            <a href="https://rubyhall.com/">More Info</a>
+            <div class="hospital-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.895783089393!2d73.8750042148574!3d18.5336110874014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f827512e15%3A0x47538bcedae49c07!2sRuby%20Hall%20Clinic!5e0!3m2!1sen!2sin!4v1657805373186!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Health Genie. All rights reserved.
+    </footer>
+
+</body>
+</html>
